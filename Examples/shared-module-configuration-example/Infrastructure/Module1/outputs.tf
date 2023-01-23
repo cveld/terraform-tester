@@ -1,3 +1,3 @@
 output "output" {
-  value = local.configuration
+  value = module.shared_configuration.specific_configuration
 }

@@ -1,6 +1,6 @@
-output "shared_configuration" {
+output "specific_configuration" {
   value = {
-    key1 = "defaultvalue1"
-    key2 = "defaultvalue2"
+    key1 = try(var.specific_configuration.key1, local.default.key1)
+    key2 = try(var.specific_configuration.key2, local.default.key2)
   }
 }
