@@ -2,6 +2,7 @@
 This repo contains a variety of Terraform examples:
 * Azure storage account firewall whitelisting
 * Optional key value pair
+* shared-module-configuration-example
 
 ## Azure storage account firewall whitelisting
 ### Context
@@ -26,6 +27,9 @@ Source code can be found in the following folder: /azure-storageaccount-firewall
 
 ## Optional key value pair
 Hashicorp Configuration Language does not seem to provide means to optionally specify a key value pair in an object. In this example we will always set the input key, but with an optional null value. Then, in our infrastructure module we will skip null values.
+
+## Shared module configuration example
+When you have a list of modules that share some core configuration set, you can provide this core configuration set to the various modules. Then, inside the module, you can check if a specific setting is available, and if not, you can fall back on the value from the core configuration set.
 
 # Folder structure
 This repo applies the following folder structure:
