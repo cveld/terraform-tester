@@ -1,0 +1,3 @@
+module "Infrastructure" {
+  source = "../../Infrastructure"
+}

@@ -351,3 +351,5 @@ MigrationBackup/
 
 # Terraform
 .terraform
+terraform.plan.out
+terraform.plan
