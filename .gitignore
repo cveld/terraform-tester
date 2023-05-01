@@ -353,3 +353,7 @@ MigrationBackup/
 .terraform
 terraform.plan.out
 terraform.plan
+.terraform.lock.hcl
+terraform.plan.json
+terraform.tfstate
+terraform.tfstate.backup
